@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品中心 — 台州意园新材料科技有限公司</title>
+  <meta name="description" content="台州意园注浆材料产品中心，提供高强灌浆料、裂缝修补注浆料、防水密封材料、金属波纹管等建筑新材料。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-icon">意</div>
+        <span>意园新材料</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="index.html">首页</a>
+        <a href="products.html" class="active">产品中心</a>
+        <a href="about.html">关于我们</a>
+        <a href="contact.html">联系我们</a>
+        <a href="contact.html" class="navbar-cta">立即询价</a>
+      </div>
+      <button class="navbar-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">首页</a>
+    <a href="products.html" class="active">产品中心</a>
+    <a href="about.html">关于我们</a>
+    <a href="contact.html">联系我们</a>
+    <a href="contact.html">立即询价</a>
+  </div>
+
+  <!-- 页面标题 -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>产品中心</span>
+      </div>
+      <h1>产品中心</h1>
+      <p>覆盖建筑注浆加固、防水密封、工程管道等全系列产品，为工程项目提供一站式材料供应。</p>
+    </div>
+  </div>
+
+  <!-- 产品列表 -->
+  <section class="section">
+    <div class="container">
+
+      <!-- 筛选标签 -->
+      <div style="display: flex; gap: 10px; margin-bottom: 40px; flex-wrap: wrap; justify-content: center;">
+        <button class="btn btn-primary btn-sm" data-filter="all" onclick="filterProducts('all')">全部产品</button>
+        <button class="btn btn-outline btn-sm" data-filter="grouting" onclick="filterProducts('grouting')">注浆材料</button>
+        <button class="btn btn-outline btn-sm" data-filter="sealing" onclick="filterProducts('sealing')">防水密封材料</button>
+        <button class="btn btn-outline btn-sm" data-filter="bellows" onclick="filterProducts('bellows')">金属波纹管</button>
+        <button class="btn btn-outline btn-sm" data-filter="plastic" onclick="filterProducts('plastic')">塑料制品</button>
+      </div>
+
+      <!-- 产品网格 -->
+      <div class="products-grid" id="products-grid">
+        <!-- JS动态渲染 -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 产品说明区 -->
+  <section class="section section-dark">
+    <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <div class="section-label">采购说明</div>
+      <h2 style="margin-bottom: 20px;">如何选购合适的注浆材料？</h2>
+      <p style="line-height: 2; margin-bottom: 32px; text-align: left;">
+        <strong style="color:var(--color-accent);">根据工程类型选择：</strong><br>
+        <br>
+        <strong>• 设备基础灌浆</strong> — 推荐高强无收缩灌浆料，强度高、微膨胀，确保设备与基础紧密结合。<br><br>
+        <strong>• 裂缝修补加固</strong> — 推荐裂缝修补注浆料，低粘度、高渗透，填充裂缝恢复结构整体性。<br><br>
+        <strong>• 防水堵漏工程</strong> — 推荐聚氨酯注浆堵漏液，遇水膨胀，快速封堵渗漏点。<br><br>
+        <strong>• 市政管道工程</strong> — 推荐预应力波纹管或PVC排水管，强度高、耐腐蚀、寿命长。<br><br>
+        如有疑问，欢迎联系我们的技术顾问，获取免费选型建议。
+      </p>
+      <a href="contact.html" class="btn btn-primary btn-lg">在线咨询选型 →</a>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="margin-bottom: 8px;">
+            <div class="navbar-logo-icon">意</div>
+            <span>意园新材料</span>
+          </a>
+          <p>台州意园新材料科技有限公司，专注注浆材料研发制造，为建筑工程项目提供高品质材料解决方案。</p>
+        </div>
+        <div>
+          <div class="footer-title">产品中心</div>
+          <div class="footer-links">
+            <a href="products.html?cat=grouting">注浆材料</a>
+            <a href="products.html?cat=sealing">防水密封材料</a>
+            <a href="products.html?cat=bellows">金属波纹管</a>
+            <a href="products.html?cat=plastic">塑料制品</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">关于我们</div>
+          <div class="footer-links">
+            <a href="about.html">公司简介</a>
+            <a href="about.html">生产能力</a>
+            <a href="about.html">质量认证</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">联系我们</div>
+          <div class="footer-links">
+            <a href="contact.html">在线询价</a>
+            <a href="contact.html">联系方式</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 台州意园新材料科技有限公司 版权所有</span>
+        <div class="footer-bottom-links">
+          <a href="index.html">首页</a>
+          <a href="contact.html">联系我们</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="回到顶部">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('products-grid');
+      if (!container) return;
+
+      const products = [
+        // 注浆材料
+        { id: 1, name: '高强无收缩灌浆料', category: 'grouting', categoryLabel: '注浆材料', desc: '高强度、无收缩、微膨胀，适用于设备基础二次灌浆、钢结构柱脚锚固、结构加固等工程。执行JG/T 408-2013标准。', specs: [{k:'型号',v:'CGM-1（标准型）'}, {k:'抗压强度',v:'28d ≥ 60MPa'}, {k:'流动度',v:'≥ 280mm'}, {k:'膨胀率',v:'≥ 0.02%'}, {k:'包装',v:'25kg/袋'}, {k:'用量',v:'约2.3t/m³'}] },
+        { id: 2, name: '裂缝修补注浆料', category: 'grouting', categoryLabel: '注浆材料', desc: '低粘度、高渗透性，专为混凝土裂缝、空洞、蜂窝麻面注浆修补设计，灌入能力强，修补效果持久。', specs: [{k:'类型',v:'改性环氧注浆料'}, {k:'粘度',v:'≤ 100mPa·s'}, {k:'抗压强度',v:'≥ 50MPa'}, {k:'粘结强度',v:'≥ 2.5MPa'}, {k:'包装',v:'10kg/组'}] },
+        { id: 3, name: '聚氨酯注浆堵漏液', category: 'grouting', categoryLabel: '注浆材料', desc: '单组分遇水膨胀型聚氨酯注浆液，注入裂缝后与水反应膨胀固结，快速封堵渗漏，适用于地下室、隧道、地铁等防水堵漏工程。', specs: [{k:'类型',v:'亲水性聚氨酯'}, {k:'密度',v:'约1.05g/cm³'}, {k:'膨胀率',v:'≥ 300%'}, {k:'凝胶时间',v:'10s~60s（可调）'}, {k:'包装',v:'10kg/桶 / 25kg/桶'}] },
+        { id: 4, name: '水泥基注浆料', category: 'grouting', categoryLabel: '注浆材料', desc: '超细水泥基注浆材料，粒径细小，可注入0.2mm以上裂缝，广泛用于地基加固、帷幕注浆、水利工程防渗加固。', specs: [{k:'型号',v:'超细型'}, {k:'细度',v:'比表面积 ≥ 600m²/kg'}, {k:'抗压强度',v:'28d ≥ 40MPa'}, {k:'流动度',v:'≥ 240mm'}, {k:'包装',v:'25kg/袋'}] },
+        // 防水密封材料
+        { id: 5, name: '建筑防水嵌缝密封胶', category: 'sealing', categoryLabel: '防水密封', desc: '单组分中性硅酮密封胶，高弹性、低模量，位移能力±25%，适用于建筑接缝、幕墙、门窗嵌缝密封，防水耐候。', specs: [{k:'类型',v:'硅酮密封胶'}, {k:'位移能力',v:'±25%'}, {k:'表干时间',v:'≤ 30min'}, {k:'耐温范围',v:'-40℃~+150℃'}, {k:'包装',v:'590ml/支'}, {k:'颜色',v:'黑/白/灰/透明'}] },
+        { id: 6, name: '聚氨酯建筑密封胶', category: 'sealing', categoryLabel: '防水密封', desc: '双组分聚氨酯密封材料，粘结力强，耐磨耐油，适用于混凝土伸缩缝、桥面、机场跑道等接缝密封防水。', specs: [{k:'类型',v:'双组分聚氨酯'}, {k:'硬度',v:'15~50（Shore A）'}, {k:'拉伸强度',v:'≥ 1.5MPa'}, {k:'断裂伸长率',v:'≥ 400%'}, {k:'包装',v:'25kg/组'}] },
+        { id: 7, name: '遇水膨胀止水条', category: 'sealing', categoryLabel: '防水密封', desc: '遇水膨胀型橡胶止水条，安装便捷，适用于施工缝、变形缝止水，膨胀率可控，止水效果持久可靠。', specs: [{k:'材质',v:'腻子型橡胶'}, {k:'膨胀率',v:'≥ 200%'}, {k:'耐水压',v:'≥ 1.5MPa'}, {k:'截面尺寸',v:'10×20mm等多种'}, {k:'包装',v:'5m/卷'}] },
+        // 金属波纹管
+        { id: 8, name: '预应力金属波纹管', category: 'bellows', categoryLabel: '金属波纹管', desc: '镀锌钢带卷制而成，强度高、耐腐蚀，用于预应力混凝土桥梁、轨枕等工程穿束预留孔道，执行JTG/T F50标准。', specs: [{k:'材质',v:'镀锌钢带'}, {k:'壁厚',v:'0.25~0.5mm'}, {k:'直径',v:'φ50~φ120mm'}, {k:'执行标准',v:'JTG/T F50'}, {k:'卷重',v:'按规格'}] },
+        { id: 9, name: 'PVC双壁波纹管', category: 'bellows', categoryLabel: '金属波纹管', desc: 'PVC材质双壁结构，环刚度高、重量轻、耐腐蚀，安装便捷，广泛用于建筑排水、市政排污、通信穿管等。', specs: [{k:'材质',v:'硬聚氯乙烯（PVC）'}, {k:'环刚度',v:'≥ 4kN/m²'}, {k:'直径',v:'φ110~φ600mm'}, {k:'连接方式',v:'承插胶圈连接'}, {k:'执行标准',v:'GB/T 18477.1'}] },
+        // 塑料制品
+        { id: 10, name: '工程塑料检查井', category: 'plastic', categoryLabel: '塑料制品', desc: 'PE/PP材质检查井，重量轻、耐腐蚀、施工快，替代传统砖砌井，用于市政排水管道系统。', specs: [{k:'材质',v:'HDPE'}, {k:'直径',v:'φ315~φ1200mm'}, {k:'环刚度',v:'≥ 8kN/m²'}, {k:'连接方式',v:'承插连接'}] },
+      ];
+
+      // 根据URL参数自动筛选分类
+      const urlParams = new URLSearchParams(window.location.search);
+      const initCategory = urlParams.get('cat') || 'all';
+
+      function renderProducts(category) {
+        const filtered = category === 'all' ? products : products.filter(p => p.category === category);
+        container.innerHTML = filtered.map(p => `
+          <div class="product-card" data-category="${p.category}">
+            <div class="product-card-img">📷 ${p.name}</div>
+            <div class="product-card-body">
+              <span class="product-tag">${p.categoryLabel}</span>
+              <h3>${p.name}</h3>
+              <p>${p.desc}</p>
+              <div class="product-card-footer">
+                <a href="product.html?id=${p.id}" class="btn btn-outline btn-sm" style="flex:1;">查看详情</a>
+                <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;">获取报价</a>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        if (filtered.length === 0) {
+          container.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--color-text-muted);padding:60px 0;">该分类暂无产品，详情请联系客服。</p>';
+        }
+      }
+
+      // 初始渲染
+      renderProducts(initCategory);
+      filterProducts(initCategory);
+    });
+
+    // 全局函数，供 onclick 调用
+    window.filterProducts = function(category) {
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        const cardCat = card.dataset.category;
+        card.style.display = (category === 'all' || cardCat === category) ? '' : 'none';
+      });
+      document.querySelectorAll('[data-filter]').forEach(btn => {
+        btn.classList.toggle('btn-primary', btn.dataset.filter === category);
+        btn.classList.toggle('btn-outline', btn.dataset.filter !== category);
+      });
+    };
+  </script>
+</body>
+</html>

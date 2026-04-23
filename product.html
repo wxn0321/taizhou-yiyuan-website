@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品详情 — 台州意园新材料科技有限公司</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-icon">意</div>
+        <span>意园新材料</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="index.html">首页</a>
+        <a href="products.html" class="active">产品中心</a>
+        <a href="about.html">关于我们</a>
+        <a href="contact.html">联系我们</a>
+        <a href="contact.html" class="navbar-cta">立即询价</a>
+      </div>
+      <button class="navbar-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">首页</a>
+    <a href="products.html" class="active">产品中心</a>
+    <a href="about.html">关于我们</a>
+    <a href="contact.html">联系我们</a>
+    <a href="contact.html">立即询价</a>
+  </div>
+
+  <!-- 页面标题 -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <a href="products.html">产品中心</a> / <span id="breadcrumb-name">产品详情</span>
+      </div>
+      <h1 id="page-title">产品详情</h1>
+      <p>获取产品详细参数与应用方案，请联系我们的销售顾问。</p>
+    </div>
+  </div>
+
+  <!-- 产品详情 -->
+  <section class="section">
+    <div class="container">
+      <div class="product-detail-grid">
+
+        <!-- 左侧：图片 -->
+        <div class="product-gallery">
+          <div class="product-gallery-img" id="product-image">
+            📷 产品图片占位
+          </div>
+          <div class="product-gallery-thumbs">
+            <div class="product-gallery-thumb active" style="background:#1e293b; display:flex; align-items:center; justify-content:center; color:var(--color-text-muted); font-size:0.7rem;">图1</div>
+            <div class="product-gallery-thumb" style="background:#1e293b; display:flex; align-items:center; justify-content:center; color:var(--color-text-muted); font-size:0.7rem;">图2</div>
+            <div class="product-gallery-thumb" style="background:#1e293b; display:flex; align-items:center; justify-content:center; color:var(--color-text-muted); font-size:0.7rem;">图3</div>
+          </div>
+        </div>
+
+        <!-- 右侧：信息 -->
+        <div class="product-detail-info">
+          <div class="product-meta" id="product-meta">
+            <!-- JS动态 -->
+          </div>
+          <h1 id="product-name">加载中...</h1>
+
+          <div class="product-price-box">
+            <div class="product-price-label">参考价格（实际报价以工程量为准）</div>
+            <div class="product-price" id="product-price">面议<span class="product-price-unit">/ 吨</span></div>
+          </div>
+
+          <div class="product-section">
+            <h3>产品描述</h3>
+            <p id="product-desc">加载中...</p>
+          </div>
+
+          <div class="product-section">
+            <h3>技术参数</h3>
+            <table class="specs-table" id="product-specs">
+              <!-- JS动态 -->
+            </table>
+          </div>
+
+          <div class="product-actions">
+            <a href="contact.html" class="btn btn-primary btn-lg" style="flex:1;">
+              📩 获取详细报价
+            </a>
+            <a href="contact.html" class="btn btn-outline btn-lg" style="flex:1;">
+              📞 电话咨询
+            </a>
+          </div>
+
+          <div style="margin-top: 20px; padding: 16px; background: rgba(245,158,11,0.06); border: 1px solid rgba(245,158,11,0.15); border-radius: var(--radius-md);">
+            <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.8; margin: 0;">
+              💡 <strong style="color: var(--color-accent);">价格说明：</strong>
+              注浆材料价格受市场原材料价格波动、运距、工程量等因素影响，实际报价请联系我们获取。我们会根据您的具体项目情况给出最优方案和价格。
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 应用场景 -->
+      <div style="margin-top: 60px; padding-top: 60px; border-top: 1px solid var(--color-border);">
+        <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 32px;">
+          <div class="section-label">应用说明</div>
+          <h2>适用范围与施工建议</h2>
+        </div>
+        <div class="features-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="feature-card">
+            <div class="feature-icon">🏗️</div>
+            <div class="feature-content">
+              <h4>适用工程</h4>
+              <p id="product-applications">加载中...</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔬</div>
+            <div class="feature-content">
+              <h4>施工要点</h4>
+              <p>施工前请清理基面，确保无油污、松散物；按推荐配合比搅拌均匀；灌浆过程中注意排气密实；养护期间避免振动和荷载。</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚠️</div>
+            <div class="feature-content">
+              <h4>注意事项</h4>
+              <p>储存于阴凉干燥处，避免雨淋受潮；未开封产品保质期6个月；使用时做好个人防护，避免接触皮肤；废弃包装请按当地法规处理。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 相关产品 -->
+      <div style="margin-top: 60px; padding-top: 60px; border-top: 1px solid var(--color-border);">
+        <div class="section-header" style="text-align: left; max-width: 100%; margin-bottom: 32px;">
+          <div class="section-label">更多产品</div>
+          <h2>相关产品推荐</h2>
+        </div>
+        <div class="products-grid" id="related-products">
+          <!-- JS动态 -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="margin-bottom: 8px;">
+            <div class="navbar-logo-icon">意</div>
+            <span>意园新材料</span>
+          </a>
+          <p>台州意园新材料科技有限公司，专注注浆材料研发制造。</p>
+        </div>
+        <div>
+          <div class="footer-title">产品中心</div>
+          <div class="footer-links">
+            <a href="products.html?cat=grouting">注浆材料</a>
+            <a href="products.html?cat=sealing">防水密封材料</a>
+            <a href="products.html?cat=bellows">金属波纹管</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">关于我们</div>
+          <div class="footer-links">
+            <a href="about.html">公司简介</a>
+            <a href="contact.html">联系方式</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">联系我们</div>
+          <div class="footer-links">
+            <a href="contact.html">在线询价</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 台州意园新材料科技有限公司 版权所有</span>
+        <div class="footer-bottom-links">
+          <a href="index.html">首页</a>
+          <a href="contact.html">联系我们</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="回到顶部">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const allProducts = [
+        { id:1, name:'高强无收缩灌浆料', category:'grouting', categoryLabel:'注浆材料', desc:'高强度、无收缩、微膨胀，适用于设备基础二次灌浆、钢结构柱脚锚固、结构加固等工程。执行JG/T 408-2013标准。', applications:'设备基础灌浆 / 钢结构柱脚锚固 / 混凝土结构加固 / 桥梁支座灌浆 / 设备安装二次灌浆', price:'面议/吨', specs:[{k:'型号',v:'CGM-1（标准型）'},{k:'抗压强度',v:'28d ≥ 60MPa'},{k:'流动度',v:'≥ 280mm'},{k:'膨胀率',v:'≥ 0.02%'},{k:'包装',v:'25kg/袋'},{k:'用量',v:'约2.3t/m³'}] },
+        { id:2, name:'裂缝修补注浆料', category:'grouting', categoryLabel:'注浆材料', desc:'低粘度、高渗透性，专为混凝土裂缝、空洞、蜂窝麻面注浆修补设计，灌入能力强，修补效果持久。', applications:'混凝土裂缝注浆修补 / 梁柱裂缝加固 / 隧道衬砌裂缝处理 / 楼板裂缝修补', price:'面议/吨', specs:[{k:'类型',v:'改性环氧注浆料'},{k:'粘度',v:'≤ 100mPa·s'},{k:'抗压强度',v:'≥ 50MPa'},{k:'粘结强度',v:'≥ 2.5MPa'},{k:'包装',v:'10kg/组'}] },
+        { id:3, name:'聚氨酯注浆堵漏液', category:'grouting', categoryLabel:'注浆材料', desc:'单组分遇水膨胀型聚氨酯注浆液，注入裂缝后与水反应膨胀固结，快速封堵渗漏，适用于地下室、隧道、地铁等防水堵漏工程。', applications:'地下室防水堵漏 / 隧道渗漏处理 / 地铁区间堵漏 / 涵洞堵漏 / 水池伸缩缝堵漏', price:'面议/吨', specs:[{k:'类型',v:'亲水性聚氨酯'},{k:'密度',v:'约1.05g/cm³'},{k:'膨胀率',v:'≥ 300%'},{k:'凝胶时间',v:'10s~60s（可调）'},{k:'包装',v:'10kg/桶 / 25kg/桶'}] },
+        { id:4, name:'水泥基注浆料', category:'grouting', categoryLabel:'注浆材料', desc:'超细水泥基注浆材料，粒径细小，可注入0.2mm以上裂缝，广泛用于地基加固、帷幕注浆、水利工程防渗加固。', applications:'地基帷幕注浆 / 坝基防渗加固 / 隧道超前注浆 / 边坡加固 / 地下连续墙接缝注浆', price:'面议/吨', specs:[{k:'型号',v:'超细型'},{k:'细度',v:'比表面积 ≥ 600m²/kg'},{k:'抗压强度',v:'28d ≥ 40MPa'},{k:'流动度',v:'≥ 240mm'},{k:'包装',v:'25kg/袋'}] },
+        { id:5, name:'建筑防水嵌缝密封胶', category:'sealing', categoryLabel:'防水密封', desc:'单组分中性硅酮密封胶，高弹性、低模量，位移能力±25%，适用于建筑接缝、幕墙、门窗嵌缝密封，防水耐候。', applications:'建筑外墙接缝 / 幕墙嵌缝 / 门窗框密封 / 铝合金接缝 / 屋面伸缩缝密封', price:'面议/支', specs:[{k:'类型',v:'硅酮密封胶'},{k:'位移能力',v:'±25%'},{k:'表干时间',v:'≤ 30min'},{k:'耐温范围',v:'-40℃~+150℃'},{k:'包装',v:'590ml/支'},{k:'颜色',v:'黑/白/灰/透明'}] },
+        { id:6, name:'聚氨酯建筑密封胶', category:'sealing', categoryLabel:'防水密封', desc:'双组分聚氨酯密封材料，粘结力强，耐磨耐油，适用于混凝土伸缩缝、桥面、机场跑道等接缝密封防水。', applications:'混凝土伸缩缝密封 / 桥面铺装接缝 / 机场跑道密封 / 工业地坪接缝 / 隧道接缝防水', price:'面议/吨', specs:[{k:'类型',v:'双组分聚氨酯'},{k:'硬度',v:'15~50（Shore A）'},{k:'拉伸强度',v:'≥ 1.5MPa'},{k:'断裂伸长率',v:'≥ 400%'},{k:'包装',v:'25kg/组'}] },
+        { id:7, name:'遇水膨胀止水条', category:'sealing', categoryLabel:'防水密封', desc:'遇水膨胀型橡胶止水条，安装便捷，适用于施工缝、变形缝止水，膨胀率可控，止水效果持久可靠。', applications:'地下室施工缝 / 变形缝止水 / 水池接缝 / 隧道管片接缝 / 穿墙管周围止水', price:'面议/米', specs:[{k:'材质',v:'腻子型橡胶'},{k:'膨胀率',v:'≥ 200%'},{k:'耐水压',v:'≥ 1.5MPa'},{k:'截面尺寸',v:'10×20mm等多种'},{k:'包装',v:'5m/卷'}] },
+        { id:8, name:'预应力金属波纹管', category:'bellows', categoryLabel:'金属波纹管', desc:'镀锌钢带卷制而成，强度高、耐腐蚀，用于预应力混凝土桥梁、轨枕等工程穿束预留孔道，执行JTG/T F50标准。', applications:'预应力混凝土桥梁 / 轨枕 / 大跨度梁 / 斜拉桥 / 市政高架桥', price:'面议/米', specs:[{k:'材质',v:'镀锌钢带'},{k:'壁厚',v:'0.25~0.5mm'},{k:'直径',v:'φ50~φ120mm'},{k:'执行标准',v:'JTG/T F50'}] },
+        { id:9, name:'PVC双壁波纹管', category:'bellows', categoryLabel:'金属波纹管', desc:'PVC材质双壁结构，环刚度高、重量轻、耐腐蚀，安装便捷，广泛用于建筑排水、市政排污、通信穿管等。', applications:'建筑排水系统 / 市政排污管道 / 通信电缆保护管 / 农业灌溉管道', price:'面议/米', specs:[{k:'材质',v:'硬聚氯乙烯（PVC）'},{k:'环刚度',v:'≥ 4kN/m²'},{k:'直径',v:'φ110~φ600mm'},{k:'连接方式',v:'承插胶圈连接'},{k:'执行标准',v:'GB/T 18477.1'}] },
+        { id:10, name:'工程塑料检查井', category:'plastic', categoryLabel:'塑料制品', desc:'PE/PP材质检查井，重量轻、耐腐蚀、施工快，替代传统砖砌井，用于市政排水管道系统。', applications:'市政排水管道检查井 / 小区雨污分流管道 / 通信管道人孔', price:'面议/套', specs:[{k:'材质',v:'HDPE'},{k:'直径',v:'φ315~φ1200mm'},{k:'环刚度',v:'≥ 8kN/m²'},{k:'连接方式',v:'承插连接'}] },
+      ];
+
+      // 获取URL参数中的产品ID
+      const params = new URLSearchParams(window.location.search);
+      const productId = parseInt(params.get('id')) || 1;
+      const product = allProducts.find(p => p.id === productId) || allProducts[0];
+
+      // 渲染产品信息
+      document.getElementById('page-title').textContent = product.name;
+      document.getElementById('breadcrumb-name').textContent = product.name;
+      document.getElementById('product-name').textContent = product.name;
+      document.getElementById('product-desc').textContent = product.desc;
+      document.getElementById('product-applications').textContent = product.applications;
+      document.title = product.name + ' — 台州意园新材料科技有限公司';
+
+      // 价格
+      const priceEl = document.querySelector('#product-price');
+      priceEl.innerHTML = product.price.replace('面议/', '') + '<span class="product-price-unit">/ 吨</span>';
+
+      // 分类标签
+      document.getElementById('product-meta').innerHTML =
+        `<span class="product-tag">${product.categoryLabel}</span>`;
+
+      // 规格表格
+      document.getElementById('product-specs').innerHTML =
+        product.specs.map(s => `<tr><td>${s.k}</td><td>${s.v}</td></tr>`).join('');
+
+      // 相关产品（同分类）
+      const related = allProducts.filter(p => p.category === product.category && p.id !== product.id).slice(0, 3);
+      const relatedContainer = document.getElementById('related-products');
+
+      if (related.length > 0) {
+        relatedContainer.innerHTML = related.map(p => `
+          <div class="product-card" data-category="${p.category}">
+            <div class="product-card-img">📷 ${p.name}</div>
+            <div class="product-card-body">
+              <span class="product-tag">${p.categoryLabel}</span>
+              <h3>${p.name}</h3>
+              <p>${p.desc.substring(0, 60)}...</p>
+              <div class="product-card-footer">
+                <a href="product.html?id=${p.id}" class="btn btn-outline btn-sm" style="flex:1;">查看详情</a>
+                <a href="contact.html" class="btn btn-primary btn-sm" style="flex:1;">获取报价</a>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      } else {
+        relatedContainer.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--color-text-muted);padding:40px 0;">暂无相关产品，<a href="products.html" style="color:var(--color-accent);">查看全部产品 →</a></p>';
+      }
+    });
+  </script>
+</body>
+</html>

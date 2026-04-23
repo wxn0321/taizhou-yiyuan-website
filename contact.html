@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 — 台州意园新材料科技有限公司</title>
+  <meta name="description" content="联系台州意园新材料科技，获取注浆材料、防水密封材料的报价和技术支持。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-icon">意</div>
+        <span>意园新材料</span>
+      </a>
+      <div class="navbar-menu">
+        <a href="index.html">首页</a>
+        <a href="products.html">产品中心</a>
+        <a href="about.html">关于我们</a>
+        <a href="contact.html" class="active">联系我们</a>
+        <a href="contact.html" class="navbar-cta">立即询价</a>
+      </div>
+      <button class="navbar-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">首页</a>
+    <a href="products.html">产品中心</a>
+    <a href="about.html">关于我们</a>
+    <a href="contact.html" class="active">联系我们</a>
+    <a href="contact.html">立即询价</a>
+  </div>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> / <span>联系我们</span>
+      </div>
+      <h1>联系我们</h1>
+      <p>告诉我们您的项目情况，获取合适的产品方案和优惠报价。</p>
+    </div>
+  </div>
+
+  <!-- 联系方式 + 询盘表单 -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- 左侧：联系方式 -->
+        <div>
+          <div class="contact-info-card">
+            <h2 style="font-size: 1.5rem; margin-bottom: 24px;">联系方式</h2>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🏢</div>
+              <div>
+                <div class="contact-info-label">公司名称</div>
+                <div class="contact-info-value">台州意园新材料科技有限公司</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <div class="contact-info-label">公司地址</div>
+                <div class="contact-info-value">浙江省台州市仙居县安洲街道直屋村小路头101号</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📞</div>
+              <div>
+                <div class="contact-info-label">联系电话</div>
+                <div class="contact-info-value">
+                  <a href="tel:暂无" style="color: var(--color-accent);">暂无（请补充）</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">✉️</div>
+              <div>
+                <div class="contact-info-label">电子邮箱</div>
+                <div class="contact-info-value">
+                  <a href="mailto:暂无" style="color: var(--color-accent);">暂无（请补充）</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div>
+                <div class="contact-info-label">营业时间</div>
+                <div class="contact-info-value">周一至周六 8:00 - 17:30</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item" style="border-bottom: none;">
+              <div class="contact-info-icon">🌐</div>
+              <div>
+                <div class="contact-info-label">官方网站</div>
+                <div class="contact-info-value">www.yyexample.com（待定）</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 地图占位 -->
+          <div style="margin-top: 24px; background: var(--color-bg-secondary); border: 1px solid var(--color-border); border-radius: var(--radius-xl); overflow: hidden; height: 200px; display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); font-size: 0.85rem;">
+            📍 地图占位 — 替换为实际地图嵌入<br>（高德地图或百度地图）
+          </div>
+        </div>
+
+        <!-- 右侧：询盘表单 -->
+        <div>
+          <div class="form-card">
+            <h2 style="font-size: 1.5rem; margin-bottom: 8px;">在线询价</h2>
+            <p style="font-size: 0.9rem; margin-bottom: 28px; color: var(--color-text-muted);">
+              填写以下信息，我们将在24小时内与您联系，给出合适的产品方案和报价。
+            </p>
+
+            <!-- 表单 -->
+            <form id="inquiry-form" novalidate>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">您的姓名 <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                  <span class="form-error">请输入您的姓名</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">联系电话 <span class="required">*</span></label>
+                  <input type="tel" id="phone" name="phone" placeholder="请输入手机号码" required>
+                  <span class="form-error">请输入正确的手机号码</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="company">公司/单位名称</label>
+                  <input type="text" id="company" name="company" placeholder="选填，如：XX建筑工程公司">
+                </div>
+
+                <div class="form-group">
+                  <label for="region">所在地区 <span class="required">*</span></label>
+                  <select id="region" name="region" required>
+                    <option value="">请选择所在地区</option>
+                    <option value="浙江省">浙江省</option>
+                    <option value="上海市">上海市</option>
+                    <option value="江苏省">江苏省</option>
+                    <option value="安徽省">安徽省</option>
+                    <option value="江西省">江西省</option>
+                    <option value="福建省">福建省</option>
+                    <option value="其他地区">其他地区</option>
+                  </select>
+                  <span class="form-error">请选择所在地区</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="project-type">工程类型</label>
+                  <select id="project-type" name="project-type">
+                    <option value="">请选择工程类型</option>
+                    <option value="房屋建筑工程">房屋建筑工程</option>
+                    <option value="市政基础设施">市政基础设施</option>
+                    <option value="桥梁/隧道工程">桥梁/隧道工程</option>
+                    <option value="水利水电工程">水利水电工程</option>
+                    <option value="工业厂房工程">工业厂房工程</option>
+                    <option value="装修装饰工程">装修装饰工程</option>
+                    <option value="其他">其他</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="scale">工程规模</label>
+                  <input type="text" id="scale" name="scale" placeholder="选填，如：约5000㎡，或约200吨">
+                </div>
+
+                <div class="form-group form-full">
+                  <label for="product-name">感兴趣的产品</label>
+                  <select id="product-name" name="product-name">
+                    <option value="">请选择感兴趣的产品（可多选备注）</option>
+                    <option value="高强无收缩灌浆料">高强无收缩灌浆料</option>
+                    <option value="裂缝修补注浆料">裂缝修补注浆料</option>
+                    <option value="聚氨酯注浆堵漏液">聚氨酯注浆堵漏液</option>
+                    <option value="水泥基注浆料">水泥基注浆料</option>
+                    <option value="建筑防水嵌缝密封胶">建筑防水嵌缝密封胶</option>
+                    <option value="聚氨酯建筑密封胶">聚氨酯建筑密封胶</option>
+                    <option value="预应力金属波纹管">预应力金属波纹管</option>
+                    <option value="PVC双壁波纹管">PVC双壁波纹管</option>
+                    <option value="多种产品">多种产品（详情见留言）</option>
+                    <option value="不确定，需要推荐">不确定，需要技术顾问推荐</option>
+                  </select>
+                </div>
+
+                <div class="form-group form-full">
+                  <label for="message">留言内容</label>
+                  <textarea id="message" name="message" placeholder="请描述您的项目情况、需要解决的问题或具体需求，我们会尽快回复您。" rows="4"></textarea>
+                </div>
+              </div>
+
+              <div style="margin-top: 28px;">
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                  📩 提交询价
+                </button>
+                <p style="text-align: center; font-size: 0.8rem; color: var(--color-text-muted); margin-top: 12px;">
+                  提交后我们将在24小时内与您联系，感谢您的信任。
+                </p>
+              </div>
+            </form>
+
+            <!-- 提交成功 -->
+            <div class="form-success">
+              <div class="form-success-icon">✅</div>
+              <h3>询价提交成功！</h3>
+              <p>感谢您的询价，我们将在 <strong>24小时内</strong> 与您联系。</p>
+              <p style="font-size: 0.85rem; color: var(--color-text-muted);">
+                提交时间：<span class="success-time"></span>
+              </p>
+              <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 24px;">
+                <a href="index.html" class="btn btn-outline">返回首页</a>
+                <a href="products.html" class="btn btn-primary">继续浏览产品</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 温馨提示 -->
+  <section class="section section-dark">
+    <div class="container" style="max-width: 800px; margin: 0 auto;">
+      <div class="section-header" style="text-align: left;">
+        <div class="section-label">温馨提示</div>
+        <h2>合作须知</h2>
+      </div>
+      <div class="features-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <div class="feature-content">
+            <h4>价格说明</h4>
+            <p>注浆材料价格受原材料成本、运距、工程量等因素影响，批量采购有优惠，具体报价以实际沟通为准。</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <div class="feature-content">
+            <h4>起订量</h4>
+            <p>常规产品支持小批量订购，详情可咨询我们的销售顾问。我们会尽量满足您的采购需求。</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <div class="feature-content">
+            <h4>物流配送</h4>
+            <p>支持汽运、海运等多种物流方式，货发全国。运费根据订单量和配送距离计算，可协商。</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <div class="feature-content">
+            <h4>长期合作</h4>
+            <p>欢迎建筑公司、工程队、经销商建立长期合作关系，量大价格从优，合作模式灵活。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="margin-bottom: 8px;">
+            <div class="navbar-logo-icon">意</div>
+            <span>意园新材料</span>
+          </a>
+          <p>台州意园新材料科技有限公司，专注注浆材料研发制造，为建筑工程项目提供高品质材料解决方案。</p>
+        </div>
+        <div>
+          <div class="footer-title">产品中心</div>
+          <div class="footer-links">
+            <a href="products.html?cat=grouting">注浆材料</a>
+            <a href="products.html?cat=sealing">防水密封材料</a>
+            <a href="products.html?cat=bellows">金属波纹管</a>
+            <a href="products.html?cat=plastic">塑料制品</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">关于我们</div>
+          <div class="footer-links">
+            <a href="about.html">公司简介</a>
+            <a href="about.html">生产能力</a>
+            <a href="about.html">发展历程</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title">联系我们</div>
+          <div class="footer-links">
+            <a href="contact.html">在线询价</a>
+            <a href="contact.html">联系方式</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 台州意园新材料科技有限公司 版权所有</span>
+        <div class="footer-bottom-links">
+          <a href="index.html">首页</a>
+          <a href="contact.html">联系我们</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="回到顶部">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
